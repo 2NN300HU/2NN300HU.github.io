@@ -274,7 +274,7 @@ function Block(bck, clr, bx) {
         highScore = Math.max(score, highScore);
     }
     this.shadow = function () {
-        this.blockY = 0;
+        this.blockY = block.blockY;
         while (!this.moveCheck(0, 1)) {
             this.blockY += 1;
         }
